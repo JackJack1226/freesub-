@@ -5,44 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 104.21.67.122
-  port: 443
+  server: 172.67.192.84
+  port: 2095
   udp: true
   type: vless
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  tls: true
-  servername: novantunnel.tech
-  skip-cert-verify: true
-  client-fingerprint: randomized
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   network: ws
   ws-opts:
-    path: /Novan-AE9
+    path: /
     headers:
-      Host: novantunnel.tech
+      Host: index.harmonica02.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 45.130.125.201
-  port: 80
-  udp: true
-  type: vless
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  network: ws
-  ws-opts:
-    path: /syncsecurity=tls
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: fa34a94b-f304-4290-bd94-a83cc2ce21be
+  uuid: 62a096ea-03a4-43a7-920f-50cb0c0a6f42
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 130.49.161.70
   port: 443
   udp: true
@@ -52,6 +37,19 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  server: 151.242.161.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 24e3a924-fc4b-4e3f-98a8-85d506d530f9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8H-YQe-nSd_aL2FwWIFNV2-anUb4v3cY_n5QcEEjGEs
+    short-id: eeed325908a87d9f
+  servername: gr2.serverslocal.ru
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 94.183.224.45
   port: 443
@@ -66,7 +64,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 85.204.107.174
+  server: 85.204.107.177
   port: 8080
   udp: true
   type: hysteria2
@@ -74,7 +72,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
