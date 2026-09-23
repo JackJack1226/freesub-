@@ -5,48 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.97.6
-  port: 443
+  server: 166.62.108.30
+  port: 8880
   udp: true
   type: vless
-  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
-  tls: true
-  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
-    path: /vl/Li1khIHH3DNItJyzraemsPBQvu
+    path: /
     headers:
-      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 104.21.58.246
-  port: 443
-  udp: true
-  type: vless
-  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
-  tls: true
-  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/q191ZuirdeahB0QuL?ed=2560
-    headers:
-      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+      Host: vms.lifetime17.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES
