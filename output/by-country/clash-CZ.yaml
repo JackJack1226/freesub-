@@ -5,25 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 172.67.141.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
-  tls: true
-  servername: frosty-pond-7436.shhabbyat914.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /NmrU9ImDG7jA7oFEem
-    headers:
-      Host: frosty-pond-7436.shhabbyat914.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 153.76.185.96
+  server: 153.76.185.100
   port: 3090
   udp: true
   type: vless
-  uuid: be2c444d-74a1-407c-a88c-cba06f9a58dc
+  uuid: 0ea51e02-ed67-439b-a562-7e3d7b4430c3
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 153.76.185.93
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 52504f52-ddd4-43fe-9fc6-8fb354ca2a2f
   network: grpc
   grpc-opts:
     grpc-service-name: vless
