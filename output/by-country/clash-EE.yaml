@@ -14,7 +14,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: estproxy4.lockdwn.com
+      Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 109.206.241.10
   port: 449
@@ -34,7 +34,7 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: ee10.zazazuza.ru
+  server: 194.26.141.148
   port: 8443
   udp: true
   type: vless
@@ -42,7 +42,7 @@ proxies:
   tls: true
   servername: fdghyt.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /vpn-wss/fluxor/59011/
