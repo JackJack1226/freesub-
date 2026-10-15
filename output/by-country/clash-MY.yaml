@@ -21,6 +21,19 @@ proxies:
   sni: moltbot.doctoroyy.net
   skip-cert-verify: true
 - name: 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
+  server: 23.27.113.251
+  port: 443
+  udp: true
+  type: vless
+  uuid: a51af616-47c0-47ae-8a98-d2788609c3d5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xmunCFTAvibeDVEU4VncLcYWVvZ4qYsbGZDwIJf-qTA
+    short-id: 11a83ddefd
+  servername: malaysiavisa.imi.gov.my
+  client-fingerprint: chrome
+- name: 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
   server: 104.21.23.80
   port: 443
   udp: true
@@ -44,6 +57,7 @@ proxy-groups:
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +66,6 @@ proxy-groups:
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
