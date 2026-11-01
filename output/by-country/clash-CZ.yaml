@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 162.159.153.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rayan-007.maxima.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 195.123.245.241
   port: 443
   udp: true
@@ -31,8 +16,8 @@ proxies:
     public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 212.102.38.25
   port: 443
   udp: true
@@ -44,8 +29,8 @@ proxies:
     public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
     short-id: e90360ec7cc61b20
   servername: udemy.com
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  client-fingerprint: ios
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 31.77.13.22
   port: 2063
   udp: true
@@ -56,32 +41,34 @@ proxies:
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
-  server: 46.8.113.64
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  server: 185.78.76.166
   port: 443
   udp: true
   type: vless
-  uuid: 55ad002b-6cdf-4d76-81bb-91f3f605afc5
-  flow: xtls-rprx-vision
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   tls: true
-  reality-opts:
-    public-key: _SukRXeT9BnvrE3eQTrw8vwsrhu7w3hNTMTEK2xzHEw
-  servername: www.zabbix.com
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 06 - xiaohe
+  servername: n.bitpulse.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
+  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: d659da01fb94
-  servername: www.foxsports.com
-  client-fingerprint: firefox
+    short-id: 2a2ce9e42980
+  servername: www.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,7 +79,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
   - 🇨🇿 捷克 (Czech) 04 - xiaohe
   - 🇨🇿 捷克 (Czech) 05 - xiaohe
-  - 🇨🇿 捷克 (Czech) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,6 +89,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
   - 🇨🇿 捷克 (Czech) 04 - xiaohe
   - 🇨🇿 捷克 (Czech) 05 - xiaohe
-  - 🇨🇿 捷克 (Czech) 06 - xiaohe
 rules:
 - MATCH,PROXIES
