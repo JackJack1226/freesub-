@@ -6,19 +6,21 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "104.17.3.81",
+      "server": "147.139.197.200",
       "server_port": 443,
-      "uuid": "12d67d2b-ae5c-4d56-9f14-d71d96f7826f",
+      "uuid": "a197af05-7048-478e-8d99-c3151adb4064",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "natan.srpcom.cloud",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "natan.srpcom.cloud"
+        "server_name": "www.ebay.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ulPGCwIg38AVGww0FBfCNROmu_0N1hykbHbhcAFgcl0",
+          "short_id": "6135361d11cc2b31"
         }
       }
     },
